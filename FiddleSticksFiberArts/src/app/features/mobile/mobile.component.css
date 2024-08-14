@@ -1,6 +1,9 @@
 
-.image {
-    padding-top: 50px;
+.fiddlesticks-image {
+    width: 80%;
+    max-width: 768;
+    max-height: 768;
+
 }
 .center {
   margin-left: auto;

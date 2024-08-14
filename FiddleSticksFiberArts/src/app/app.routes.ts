@@ -9,7 +9,7 @@ function isDesktop(): boolean {
 export const routes: Routes = [
   {
     path: '', loadComponent: () => {
-        if(isDesktop()) return import('./features/desktop/desktop.component').then(mod => mod.DesktopComponent);
+        // if(isDesktop()) return import('./features/desktop/desktop.component').then(mod => mod.DesktopComponent);
         return import('./features/mobile/mobile.component').then(mod => mod.MobileComponent);
     }
   }
