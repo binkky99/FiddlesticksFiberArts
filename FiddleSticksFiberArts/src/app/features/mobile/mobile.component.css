@@ -1,9 +1,6 @@
 
-.fiddlesticks-image {
-    width: 80%;
-    max-width: 768;
-    max-height: 768;
-
+.image-container {
+    padding-top: 50px;
 }
 .center {
   margin-left: auto;
@@ -15,6 +12,9 @@
     border-width: 6px;
     border-color: black;
     border-style: solid;
+    width: 80%;
+    max-width: 768;
+    max-height: 768;
 }
 h1 {
     color: #201d1d;
