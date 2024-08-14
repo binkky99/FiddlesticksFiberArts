@@ -1,3 +1,19 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+function isDesktop(): boolean {
+  if (typeof window !== "undefined") {
+    return window.innerWidth > 768;
+  } else return true;
+ }
+
+export const routes: Routes = [
+  {
+    path: 'home', loadComponent: () => {
+        // if(isDesktop()) return import('./features/desktop/desktop.component').then(mod => mod.DesktopComponent);
+        return import('./features/mobile/mobile.component').then(mod => mod.MobileComponent);
+    }
+  },
+  {
+    path: '', redirectTo: '/home', pathMatch: 'full'
+  }
+];
